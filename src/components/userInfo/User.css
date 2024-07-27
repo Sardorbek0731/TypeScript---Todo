@@ -1,0 +1,26 @@
+.userInfo {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.userInfo img {
+  width: 3.1rem;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.userInfo h1 {
+  font-family: var(--user-fontFamily);
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+
+.userInfo span {
+  color: var(--text-color);
+  font-size: 0.95rem;
+  line-height: 0.8rem;
+}
