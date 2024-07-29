@@ -2,13 +2,13 @@
   position: relative;
   width: 30rem;
   background-color: white;
-  margin-top: 6rem;
-  box-shadow: 1rem 1rem 10rem rgba(0, 0, 0, 0.12);
-  padding: 1.9rem;
+  margin-top: 5rem;
+  box-shadow: 1rem 1rem 10rem rgba(0, 0, 0, 0.22);
+  padding: 2rem;
 }
 
-.date {
-  margin-bottom: 2.5rem;
+.row {
+  margin-bottom: 2.25rem;
 }
 
 .date span {
@@ -34,14 +34,14 @@
 
 .addTodos button {
   position: absolute;
-  width: 5rem;
-  height: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border-radius: 50%;
   border: none;
   cursor: pointer;
   outline: none;
   background-color: rgba(11, 232, 166, 0.8);
-  bottom: -2.5rem;
+  bottom: -2.25rem;
 }
 
 .addTodos button img {
