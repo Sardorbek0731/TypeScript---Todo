@@ -4,7 +4,7 @@ import "./Weather.css";
 // Icon
 import sun from "../../assets/icons/sun.png";
 
-function Weather() {
+function Weather(): JSX.Element {
   return (
     <div className="weather flex alignCenter">
       <img src={sun} alt="Sun Icon" />

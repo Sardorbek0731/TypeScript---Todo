@@ -1,52 +1,43 @@
 .todos {
   position: relative;
-  width: 27rem;
-  background-color: white;
-  margin-top: 5rem;
-  box-shadow: 1rem 1rem 10rem rgba(0, 0, 0, 0.22);
-  padding: 2rem;
+  width: 33rem;
+  background-color: #ffffff;
+  margin-top: 6rem;
+  box-shadow: 1rem 1rem 10rem rgba(0, 0, 0, 0.6);
+  padding: 1.9rem;
+  background: url("../../assets/images/nature/nature.jpg") top center no-repeat;
+  background-size: 100% 17.8rem;
 }
 
 .row {
-  margin-bottom: 2.2rem;
-  padding-bottom: 2.2rem;
-  border-bottom: 1px dashed var(--border-color);
+  margin-bottom: 1.9rem;
 }
 
-.date span {
-  color: var(--text-color);
+.title h1 {
+  font-size: 2.2rem;
+  color: white;
+  font-family: var(--user-fontFamily);
+  text-shadow: 0 0 1.9rem black;
+}
+.title h1:last-child {
+  margin-left: 2.5rem;
 }
 
-.day {
-  font-size: 2.7rem;
-  margin-right: 0.5rem;
-  font-weight: 300;
-}
-
-.month {
-  font-size: 1.1rem;
-  line-height: 1.1rem;
-  margin-bottom: 0.2rem;
-}
-
-.yearAndWeek {
-  font-size: 0.9rem;
-  line-height: 0.9rem;
-}
-
-.addTodos button {
+.addTodos {
   position: absolute;
-  width: 4.4rem;
-  height: 4.4rem;
+  right: 2rem;
+  width: 4.2rem;
+  height: 4.2rem;
   border-radius: 50%;
   border: none;
   cursor: pointer;
   outline: none;
   background-color: rgba(11, 232, 166, 0.8);
-  bottom: -2.2rem;
+  top: 15.6rem;
+  box-shadow: 1rem 1rem 5rem white;
 }
 
-.addTodos button img {
+.addTodos img {
   width: 2.3rem;
   height: auto;
 }

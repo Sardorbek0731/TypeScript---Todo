@@ -15,22 +15,16 @@ function Todo(): JSX.Element {
         <User />
 
         <div className="row flex justifyBetween alignCenter">
-          <div className="date flex alignCenter">
-            <span className="day">27</span>
-            <div className="flex column justifyBetween">
-              <span className="month">July</span>
-              <span className="yearAndWeek">2024, Saturday</span>
-            </div>
+          <div className="title">
+            <h1>Your</h1>
+            <h1>Todos</h1>
           </div>
-
           <Weather />
         </div>
 
-        <div className="addTodos flex justifyCenter wp-100">
-          <button className="flex justifyCenter alignCenter">
-            <img src={plus} alt="Plus Icon" />
-          </button>
-        </div>
+        <button className="addTodos flex justifyCenter alignCenter">
+          <img src={plus} alt="Plus Icon" />
+        </button>
       </div>
     </div>
   );
