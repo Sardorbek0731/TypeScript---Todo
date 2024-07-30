@@ -4,11 +4,12 @@
   height: 4.8rem;
   padding: 0 1rem;
   cursor: pointer;
+  width: 13rem;
 }
 
 .userInfo img {
-  width: 2.85rem;
-  height: 2.85rem;
+  width: 2.9rem;
+  height: 2.9rem;
   border-radius: 50%;
   margin-right: 0.5rem;
 }
@@ -18,14 +19,18 @@
 }
 
 .userInfo h1 {
+  display: -webkit-box;
   font-family: var(--user-fontFamily);
   font-size: 1.3rem;
   font-weight: 300;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .userInfo h3 {
   color: var(--text-color);
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 400;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -38,15 +43,15 @@
 }
 
 .date img {
-  width: 2.85rem;
-  height: 2.85rem;
+  width: 2.9rem;
+  height: 2.9rem;
   margin-right: 0.5rem;
 }
 
 .date h1 {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 400;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: rgb(0, 145, 255);
 }
 

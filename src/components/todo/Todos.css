@@ -1,6 +1,6 @@
 .todos {
   position: relative;
-  width: 33rem;
+  width: 30.5rem;
   background-color: #ffffff;
   margin-top: 6rem;
   box-shadow: 1rem 1rem 10rem rgba(0, 0, 0, 0.6);
@@ -17,7 +17,7 @@
   font-size: 2.2rem;
   color: white;
   font-family: var(--user-fontFamily);
-  text-shadow: 0 0 1.9rem black;
+  text-shadow: 0 0 1rem black;
 }
 .title h1:last-child {
   margin-left: 2.5rem;
