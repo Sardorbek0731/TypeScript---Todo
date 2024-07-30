@@ -2,7 +2,7 @@
 import "./App.css";
 
 // Components
-import Todos from "./components/todo/Todos.tsx";
+import Todos from "./components/todo/Todos";
 
 function App(): JSX.Element {
   return <Todos />;

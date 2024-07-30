@@ -7,6 +7,7 @@ import plus from "../../assets/icons/plus.png";
 // Components
 import User from "../userInfo/User";
 import Weather from "../weather/Weather";
+import Input from "../input/Input";
 
 function Todo(): JSX.Element {
   return (
@@ -21,6 +22,8 @@ function Todo(): JSX.Element {
           </div>
           <Weather />
         </div>
+
+        <Input />
 
         <button className="addTodos flex justifyCenter alignCenter">
           <img src={plus} alt="Plus Icon" />
