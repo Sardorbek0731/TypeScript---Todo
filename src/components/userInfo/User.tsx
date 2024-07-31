@@ -9,7 +9,7 @@ import calendar from "../../assets/icons/calendar.png";
 
 function User(): JSX.Element {
   return (
-    <div className="row flex alignCenter justifyBetween">
+    <div className="userRow flex alignCenter justifyBetween">
       <div className="userInfo flex alignCenter">
         <img src={user} alt="User Image" />
         <span className="flex column justifyBetween">

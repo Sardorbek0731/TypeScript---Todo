@@ -1,16 +1,16 @@
 .todos {
   position: relative;
-  width: 30.7rem;
-  background-color: #ffffff;
-  margin-top: 6rem;
+  width: 31rem;
+  margin-top: 5rem;
   box-shadow: 1rem 1rem 10rem rgba(0, 0, 0, 0.6);
-  padding: 1.9rem;
+  padding: 2rem 2rem 0 2rem;
   background: url("../../assets/images/nature/nature.jpg") top center no-repeat;
-  background-size: 100% 17.8rem;
+  background-color: #ffffff;
+  background-size: 100% 18.1rem;
 }
 
 .row {
-  margin-bottom: 1.9rem;
+  margin-bottom: 4rem;
 }
 
 .title h1 {
@@ -26,18 +26,18 @@
 .addTodos {
   position: absolute;
   right: 2rem;
-  width: 4.2rem;
-  height: 4.2rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   border: none;
   cursor: pointer;
   outline: none;
-  background-color: rgba(11, 232, 166, 0.8);
-  top: 15.6rem;
-  box-shadow: 1rem 1rem 5rem white;
+  background-color: rgb(32, 255, 169);
+  top: 16rem;
+  box-shadow: 0 0 2rem white;
 }
 
 .addTodos img {
-  width: 2.3rem;
+  width: 2rem;
   height: auto;
 }

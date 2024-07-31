@@ -23,11 +23,11 @@ function Todo(): JSX.Element {
           <Weather />
         </div>
 
-        <Input />
-
         <button className="addTodos flex justifyCenter alignCenter">
           <img src={plus} alt="Plus Icon" />
         </button>
+
+        <Input />
       </div>
     </div>
   );

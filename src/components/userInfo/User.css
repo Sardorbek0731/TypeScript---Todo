@@ -7,6 +7,10 @@
   width: 13rem;
 }
 
+.userRow {
+  margin-bottom: 2rem;
+}
+
 .userInfo img {
   width: 2.9rem;
   height: 2.9rem;
