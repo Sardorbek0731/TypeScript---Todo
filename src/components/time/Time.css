@@ -1,6 +1,6 @@
 .time {
-  margin-bottom: 2.7rem;
-  padding-bottom: 2.7rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
   border-bottom: 1px dashed white;
 }
 
@@ -13,8 +13,8 @@
 }
 
 .time h3 {
-  font-size: 1.7rem;
-  line-height: 1.2rem;
+  font-size: 1.6rem;
+  line-height: 1.1rem;
   color: white;
   text-shadow: 0 0 1rem black;
   font-family: var(--user-fontFamily);
