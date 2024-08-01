@@ -3,24 +3,39 @@
   width: 30.7rem;
   margin-top: 5rem;
   box-shadow: 1rem 1rem 10rem rgba(0, 0, 0, 0.6);
-  padding: 2rem 2rem 0 2rem;
+  padding: 2.4rem 2rem 0 2rem;
   background: url("../../assets/images/nature/nature.jpg") top center no-repeat;
   background-color: #ffffff;
-  background-size: auto 22.85rem;
+  background-size: auto 24.8rem;
 }
 
 .row {
   margin-bottom: 4rem;
 }
 
-.title h1 {
-  font-size: 2.2rem;
-  color: white;
-  font-family: var(--user-fontFamily);
-  text-shadow: 0 0 1rem black;
+.date {
+  background-color: white;
+  border-radius: 1rem;
+  height: 4.6rem;
+  padding: 0 1rem;
 }
-.title h1:last-child {
-  margin-left: 2.5rem;
+
+.date img {
+  width: 2.7rem;
+  height: 2.7rem;
+  margin-right: 0.5rem;
+}
+
+.date h1 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 145, 255);
+}
+
+.date h3 {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .addTodos {
@@ -33,7 +48,7 @@
   cursor: pointer;
   outline: none;
   background-color: rgb(7, 173, 73);
-  top: 20.85rem;
+  top: 22.8rem;
   transition: all 0.3s;
 }
 

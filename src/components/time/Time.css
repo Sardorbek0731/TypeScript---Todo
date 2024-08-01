@@ -1,11 +1,19 @@
 .time {
-  justify-content: flex-end;
-  margin-bottom: 2rem;
+  margin-bottom: 2.3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px dashed white;
+}
+
+.title h1 {
+  font-size: 2rem;
+  color: white;
+  font-family: var(--user-fontFamily);
+  text-shadow: 0 0 1.5rem black;
 }
 
 .time span {
-  font-family: var(--user-fontFamily);
+  font-size: 2rem;
   color: white;
-  font-size: 2.3rem;
-  text-shadow: 0 0 1rem black;
+  text-shadow: 0 0 1.5rem black;
+  font-family: var(--user-fontFamily);
 }
