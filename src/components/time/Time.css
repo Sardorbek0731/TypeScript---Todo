@@ -1,19 +1,21 @@
 .time {
-  margin-bottom: 2.3rem;
-  padding-bottom: 2rem;
+  margin-bottom: 2.7rem;
+  padding-bottom: 2.7rem;
   border-bottom: 1px dashed white;
 }
 
 .title h1 {
-  font-size: 2rem;
+  font-size: 2.8rem;
+  line-height: 2rem;
   color: white;
   font-family: var(--user-fontFamily);
-  text-shadow: 0 0 1.5rem black;
+  text-shadow: 0 0 1rem black;
 }
 
-.time span {
-  font-size: 2rem;
+.time h3 {
+  font-size: 1.7rem;
+  line-height: 1.2rem;
   color: white;
-  text-shadow: 0 0 1.5rem black;
+  text-shadow: 0 0 1rem black;
   font-family: var(--user-fontFamily);
 }

@@ -1,21 +1,25 @@
 .user {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .userInfo {
-  background-color: white;
-  border-radius: 1rem;
-  height: 5rem;
-  padding: 0 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  border-radius: 0.9rem;
+  padding: 1rem;
   cursor: pointer;
-  width: 13.8rem;
+  width: 18.2rem;
+  transition: all 0.3s;
+}
+.userInfo:hover {
+  background-color: white;
 }
 
 .userInfo img {
-  width: 3.3rem;
-  height: 3.3rem;
+  width: 3.7rem;
+  height: 3.7rem;
   border-radius: 50%;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 .userInfo span {
@@ -26,6 +30,7 @@
   display: -webkit-box;
   font-family: var(--user-fontFamily);
   font-size: 1.4rem;
+  margin-bottom: 0.4rem;
   font-weight: 300;
   overflow: hidden;
   -webkit-line-clamp: 1;
@@ -34,7 +39,7 @@
 
 .userInfo h3 {
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: 0.975rem;
   font-weight: 400;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }

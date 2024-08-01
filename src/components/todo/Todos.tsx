@@ -35,7 +35,7 @@ function Todo(): JSX.Element {
           <img src={plus} alt="Plus Icon" />
         </button>
 
-        <Input />
+        {/* <Input /> */}
       </div>
     </div>
   );

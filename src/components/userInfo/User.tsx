@@ -2,7 +2,7 @@
 import "./User.css";
 
 // Images
-import user from "../../assets/images/user-image/Sardorbek2007.jpg";
+import user from "../../assets/images/user-image/user.jpg";
 
 function User(): JSX.Element {
   return (
