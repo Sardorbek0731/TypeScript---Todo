@@ -6,14 +6,12 @@ import sun from "../../assets/icons/sun.png";
 
 function Weather(): JSX.Element {
   return (
-    <div className="weather flex alignCenter">
+    <div className="weather todoItem flex alignCenter">
       <img src={sun} alt="Sun Icon" />
-      <div className="flex column">
-        <span className="celsius">31°C</span>
-        <div className="region">
-          <h3>Urgench, UZ</h3>
-        </div>
-      </div>
+      <span className="flex column">
+        <h1 className="celsius">31°C</h1>
+        <h3 className="region">Urgench, UZ</h3>
+      </span>
     </div>
   );
 }
