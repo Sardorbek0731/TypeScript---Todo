@@ -12,8 +12,6 @@ function Weather(): JSX.Element | null {
     "http://ip-api.com/json/?fields=61439"
   );
 
-  data && console.log(data);
-
   return (
     data && (
       <div className="weather todoItem flex alignCenter">
