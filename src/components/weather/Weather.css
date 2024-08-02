@@ -1,3 +1,19 @@
+.weatherIcon {
+  position: relative;
+  width: 2.6rem;
+  height: 2.6rem;
+  margin-right: 1rem;
+  overflow: hidden;
+}
+
+.weather img {
+  position: absolute;
+  width: 4.92rem;
+  height: 4.92rem;
+  margin-right: 2px;
+  margin-bottom: 1px;
+}
+
 .weather h1 {
   color: rgb(255, 174, 0);
 }
