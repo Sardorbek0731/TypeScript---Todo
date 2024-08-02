@@ -2,42 +2,20 @@
 import "./Time.css";
 
 // Hooks
-import { useState } from "react";
+import { useDate } from "../../hooks/useDate";
 
 function Time(): JSX.Element {
-  let time: string = `${
-    new Date().getHours() >= 10
-      ? new Date().getHours()
-      : "0" + new Date().getHours()
-  }:${
-    new Date().getMinutes() >= 10
-      ? new Date().getMinutes()
-      : "0" + new Date().getMinutes()
-  }`;
-
-  const [clock, setClock] = useState<string>(time);
-
-  const updateTime = (): void => {
-    time = `${
-      new Date().getHours() >= 10
-        ? new Date().getHours()
-        : "0" + new Date().getHours()
-    }:${
-      new Date().getMinutes() >= 10
-        ? new Date().getMinutes()
-        : "0" + new Date().getMinutes()
-    }`;
-    setClock(time);
-  };
-
-  setInterval(updateTime, 1000);
+  const date: Date = useDate();
 
   return (
     <div className="time flex justifyBetween wp-100">
       <div className="title">
         <h1>Note</h1>
       </div>
-      <h3>{clock}</h3>
+      <h3>
+        {date.getHours() >= 10 ? date.getHours() : "0" + date.getHours()}:
+        {date.getMinutes() >= 10 ? date.getMinutes() : "0" + date.getMinutes()}
+      </h3>
     </div>
   );
 }
