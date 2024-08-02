@@ -1,27 +1,32 @@
 // CSS
 import "./Weather.css";
 
-// Icon
-import sun from "../../assets/icons/sun.png";
-
 // Hooks
 import { useFetch } from "../../hooks/useFetch";
+import { ILocation, IWeather } from "../../interfaces";
 
-function Weather(): JSX.Element {
-  const url = "http://ip-api.com/json/?fields=61439";
+// Interfaces
 
-  const { data } = useFetch(url);
-
-  console.log(data);
+function Weather(): JSX.Element | null {
+  const data: [ILocation, IWeather] | null = useFetch(
+    "http://ip-api.com/json/?fields=61439"
+  );
 
   return (
-    <div className="weather todoItem flex alignCenter">
-      <img src={sun} alt="Sun Icon" />
-      <span className="flex column">
-        <h1 className="celsius">31°C</h1>
-        <h3 className="region">, UZ</h3>
-      </span>
-    </div>
+    data && (
+      <div className="weather todoItem flex alignCenter">
+        <img
+          src={`http://openweathermap.org/img/wn/${data[1].weather[0].icon}.png`}
+          alt="Sun Icon"
+        />
+        <span className="flex column">
+          <h1 className="celsius">{Math.round(data[1].main.temp)}°</h1>
+          <h3 className="region">
+            {data[0].city}, {data[0].countryCode}
+          </h3>
+        </span>
+      </div>
+    )
   );
 }
 
