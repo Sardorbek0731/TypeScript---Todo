@@ -1,51 +1,24 @@
 .input {
-  position: relative;
-  margin-bottom: 2rem;
-  margin-top: 8rem;
-}
-
-.input::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 1px;
-  width: 0;
-  background-color: rgb(0, 0, 0);
-  transition: all 0.4s ease;
-}
-
-.input:hover::after {
-  width: 100%;
+  margin: 6rem 0 3rem 0;
 }
 
 .input input {
   width: 100%;
-  border: none;
-  border-bottom: 1px solid rgb(207, 207, 215);
-  padding-bottom: 1rem;
-  padding-right: 2.8rem;
   outline: none;
-  font-size: 1.05rem;
+  padding: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 400;
-  position: relative;
-  background-color: white;
-  transition: all 0.4s;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 1rem 1rem 2rem rgba(69, 68, 79, 0.12);
+  transition: all 0.3s;
 }
 
-.input input:focus {
-  border-bottom: 1px solid rgb(0, 0, 0);
+.input input:hover {
+  border: 1px solid black;
 }
 
 .input input::placeholder {
-  font-family: var(--user-fontFamily);
+  font-family: var(--serif-fontFamily);
   font-weight: 300;
-  color: rgba(0, 0, 0, 0.9);
-}
-
-.input img {
-  position: absolute;
-  right: 0;
-  bottom: 0.7rem;
-  width: 1.8rem;
 }

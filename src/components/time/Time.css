@@ -1,5 +1,5 @@
 .time {
-  margin-bottom: 3rem;
+  margin-bottom: 2.2rem;
   padding-bottom: 3rem;
   border-bottom: 1px dashed white;
 }
@@ -8,7 +8,7 @@
   font-size: 2.8rem;
   line-height: 2rem;
   color: white;
-  font-family: var(--user-fontFamily);
+  font-family: var(--serif-fontFamily);
   text-shadow: 0 0 1rem black;
 }
 
@@ -17,5 +17,5 @@
   line-height: 1.1rem;
   color: white;
   text-shadow: 0 0 1rem black;
-  font-family: var(--user-fontFamily);
+  font-family: var(--serif-fontFamily);
 }
