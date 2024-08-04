@@ -11,3 +11,8 @@ export interface IWeather {
     icon: string;
   }[];
 }
+
+export interface ITodo {
+  value: string;
+  date: string;
+}
