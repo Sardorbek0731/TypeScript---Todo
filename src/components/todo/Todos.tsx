@@ -3,6 +3,8 @@ import "./Todos.css";
 
 // Icon
 import plus from "../../assets/icons/plus.png";
+import deleteIcon from "../../assets/icons/delete.png";
+import edit from "../../assets/icons/edit.png";
 
 // Components
 import Time from "../time/Time";
@@ -27,18 +29,18 @@ function Todo(): JSX.Element {
 
   const inputValue = useRef<HTMLInputElement>(null);
 
-  const date =
-    new Date().getHours() +
-    ":" +
-    new Date().getMinutes() +
-    ", " +
-    new Date().getDate() +
-    "/" +
-    (new Date().getMonth() + 1) +
-    "/" +
-    new Date().getFullYear();
-
   const addTodo = (): void => {
+    const date =
+      new Date().getHours() +
+      ":" +
+      new Date().getMinutes() +
+      ", " +
+      new Date().getDate() +
+      "/" +
+      (new Date().getMonth() + 1) +
+      "/" +
+      new Date().getFullYear();
+
     const localTodo: ITodo[] | null = JSON.parse(
       localStorage.getItem("todos")!
     );
@@ -106,17 +108,27 @@ function Todo(): JSX.Element {
           <label htmlFor="input">Type your todos ...</label>
           <img src={feather} alt="Feather Image" />
         </div>
-      </div>
 
-      <div className="flex column">
-        {mapTodos &&
-          mapTodos?.map((todo, i) => {
-            return (
-              <div className="todo flex alignCenter justifyBetween" key={i}>
-                <h1>{todo.value}</h1>
-              </div>
-            );
-          })}
+        <div className="flex column wp-100">
+          {mapTodos &&
+            mapTodos?.map((todo, i) => {
+              return (
+                <div className="todo flex alignCenter justifyBetween" key={i}>
+                  <h1 className="title">{todo.value}</h1>
+                  <h3 className="date">{todo.date}</h3>
+
+                  <div className="button">
+                    <span className="edit">
+                      <img src={edit} alt="Edit Icon" />
+                    </span>
+                    <span className="delete">
+                      <img src={deleteIcon} alt="Delete Icon" />
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+        </div>
       </div>
     </div>
   );

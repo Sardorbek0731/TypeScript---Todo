@@ -1,9 +1,8 @@
 .todos {
   position: relative;
-  width: 28.5rem;
+  width: 28rem;
   padding: 3rem 2rem 0 2rem;
-  margin-top: 6rem;
-  margin-bottom: 3rem;
+  margin: 5rem 0;
   box-shadow: 0 0 5rem rgba(0, 0, 0, 0.2);
   background: url("../../assets/images/nature/nature.jpg") top center no-repeat;
   background-color: #ffffff;
@@ -17,7 +16,7 @@
 .todoItem {
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(4px);
-  border-radius: 0.9rem;
+  border-radius: 0.3rem;
   padding: 1rem;
   transition: all 0.3s;
   cursor: pointer;
@@ -61,18 +60,19 @@
 
 .input {
   position: relative;
-  margin: 6rem 0 2rem 0;
+  margin: 6rem 0 3rem 0;
 }
 
 .input input {
   position: relative;
   width: 100%;
   outline: none;
-  padding: 1.1rem 6rem 1.1rem 1.2rem;
+  padding: 1.2rem 6rem 1.2rem 1rem;
   font-size: 1rem;
   font-weight: 400;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   transition: all 0.3s;
+  border-radius: 0.3rem;
 }
 
 .input input:hover,
@@ -82,7 +82,7 @@
 
 .input label {
   position: absolute;
-  left: 0.9rem;
+  left: 0.7rem;
   top: 50%;
   padding: 0 0.3rem;
   font-size: 0.9rem;
@@ -109,9 +109,41 @@
 }
 
 .todo {
-  background-color: white;
-  padding: 1.5rem 2rem;
-  width: 28.5rem;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  padding: 1.2rem 1rem;
+  transition: all 0.3s;
+}
+
+.todo:hover {
+  border: 1px solid black;
+}
+
+.todo:last-child {
   margin-bottom: 2rem;
-  border: 1px solid rgba(65, 64, 75, 0.3);
+}
+
+.title {
+  width: 42%;
+  font-size: 1.05rem;
+  font-weight: 400;
+  font-family: var(--serif-fontFamily);
+}
+
+.date {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.button img {
+  width: 1.4rem;
+  height: auto;
+  cursor: pointer;
+}
+
+.edit {
+  margin-right: 0.3rem;
 }
