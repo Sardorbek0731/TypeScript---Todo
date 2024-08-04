@@ -53,6 +53,7 @@ function Todo(): JSX.Element {
         {
           value: inputValue.current.value,
           date,
+          id: localTodo.length,
         },
       ]);
     } else {
@@ -60,6 +61,7 @@ function Todo(): JSX.Element {
         {
           value: inputValue.current.value,
           date,
+          id: 0,
         },
       ]);
     }
@@ -78,6 +80,26 @@ function Todo(): JSX.Element {
   useEffect(() => {
     todos.length && localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
+
+  const handleDelete = (id: number): void => {
+    let localTodo: ITodo[] | null = JSON.parse(localStorage.getItem("todos")!);
+
+    const newTodos = localTodo?.filter((todo) => {
+      return todo.id !== id;
+    });
+
+    if (newTodos?.length) {
+      localTodo = newTodos;
+
+      setTodos(localTodo);
+    } else {
+      setTodos([]);
+
+      localStorage.clear();
+    }
+
+    addTodo();
+  };
 
   return (
     <div className="flex justifyCenter column alignCenter wp-100">
@@ -111,9 +133,12 @@ function Todo(): JSX.Element {
 
         <div className="flex column wp-100">
           {mapTodos &&
-            mapTodos?.map((todo, i) => {
+            mapTodos?.map((todo) => {
               return (
-                <div className="todo flex alignCenter justifyBetween" key={i}>
+                <div
+                  className="todo flex alignCenter justifyBetween"
+                  key={todo.id}
+                >
                   <h1 className="title">{todo.value}</h1>
                   <h3 className="date">{todo.date}</h3>
 
@@ -121,7 +146,12 @@ function Todo(): JSX.Element {
                     <span className="edit">
                       <img src={edit} alt="Edit Icon" />
                     </span>
-                    <span className="delete">
+                    <span
+                      className="delete"
+                      onClick={() => {
+                        handleDelete(todo.id);
+                      }}
+                    >
                       <img src={deleteIcon} alt="Delete Icon" />
                     </span>
                   </div>

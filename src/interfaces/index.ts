@@ -15,4 +15,5 @@ export interface IWeather {
 export interface ITodo {
   value: string;
   date: string;
+  id: number;
 }

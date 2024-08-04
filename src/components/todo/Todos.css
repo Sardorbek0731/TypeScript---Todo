@@ -60,7 +60,7 @@
 
 .input {
   position: relative;
-  margin: 6rem 0 3rem 0;
+  margin: 6rem 0 2rem 0;
 }
 
 .input input {
@@ -119,6 +119,10 @@
 
 .todo:hover {
   border: 1px solid black;
+}
+
+.todo:first-child {
+  margin-top: 1rem;
 }
 
 .todo:last-child {
