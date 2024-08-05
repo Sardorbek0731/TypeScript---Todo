@@ -16,7 +16,6 @@
 .todoItem {
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(4px);
-  border-radius: 0.3rem;
   padding: 1rem;
   transition: all 0.3s;
   cursor: pointer;
@@ -72,7 +71,6 @@
   font-weight: 400;
   border: 1px solid rgba(0, 0, 0, 0.2);
   transition: all 0.3s;
-  border-radius: 0.3rem;
 }
 
 .input input:hover,
@@ -112,8 +110,7 @@
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 1rem;
-  border-radius: 0.3rem;
-  padding: 1.2rem 1rem;
+  padding: 1rem;
   transition: all 0.3s;
 }
 
@@ -131,7 +128,7 @@
 
 .title {
   width: 42%;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   font-weight: 400;
   font-family: var(--serif-fontFamily);
 }
@@ -142,12 +139,35 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
-.button img {
-  width: 1.4rem;
+.delete img {
+  width: 1.6rem;
   height: auto;
   cursor: pointer;
 }
 
 .edit {
-  margin-right: 0.3rem;
+  margin-right: 0.4rem;
+}
+
+.edit img {
+  width: 1.257rem;
+  height: auto;
+  cursor: pointer;
+  margin-top: 0.15rem;
+}
+
+.todo input {
+  padding: 0.7rem 0.6rem;
+  outline: none;
+  width: 44%;
+  font-size: 1.1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  font-family: var(--serif-fontFamily);
+}
+
+.todo input:hover,
+.todo input:focus,
+.todo input:valid {
+  border: 1px solid rgb(0, 0, 0);
 }

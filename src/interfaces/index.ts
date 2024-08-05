@@ -14,6 +14,11 @@ export interface IWeather {
 
 export interface ITodo {
   value: string;
+  id: number;
   date: string;
+}
+
+export interface IEdit {
+  boolean: boolean;
   id: number;
 }
