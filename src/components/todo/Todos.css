@@ -159,7 +159,7 @@
 .todo input {
   padding: 0.7rem 0.6rem;
   outline: none;
-  width: 44%;
+  width: 15rem;
   font-size: 1.1rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
   transition: all 0.3s;
@@ -170,4 +170,18 @@
 .todo input:focus,
 .todo input:valid {
   border: 1px solid rgb(0, 0, 0);
+}
+
+.editSaveBtn {
+  padding: 0.7rem 1rem;
+  font-size: 1.1rem;
+  color: white;
+  font-family: var(--serif-fontFamily);
+  border: 1px solid #ff4d00;
+  background-color: #ff4d00;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.editSaveBtn:hover {
+  background-color: #ff6c2d;
 }

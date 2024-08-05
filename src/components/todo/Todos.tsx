@@ -112,6 +112,18 @@ function Todo(): JSX.Element {
     });
   };
 
+  const savedEdit = () => {
+    const localTodo: ITodo[] = JSON.parse(localStorage.getItem("todos")!);
+
+    localTodo.map((todo, i) => {
+      if (todo.id === edit.id) {
+        if (localTodo[i].value.length > 1) {
+          setEdit({ boolean: false, id: edit.id });
+        }
+      }
+    });
+  };
+
   const handleEdit = (id: number): void => {
     const localTodo: ITodo[] = JSON.parse(localStorage.getItem("todos")!);
 
@@ -181,30 +193,41 @@ function Todo(): JSX.Element {
                   key={todo.id}
                 >
                   {edit.boolean && edit.id === todo.id ? (
-                    <input
-                      type="text"
-                      value={editValue}
-                      onChange={setEditValueFunc}
-                      autoComplete="off"
-                      required
-                    />
+                    <>
+                      <input
+                        type="text"
+                        value={editValue}
+                        onChange={setEditValueFunc}
+                        autoComplete="off"
+                        required
+                      />
+
+                      <span className="editSaveBtn" onClick={savedEdit}>
+                        Saqlash
+                      </span>
+                    </>
                   ) : (
-                    <h1 className="title">{todo.value}</h1>
+                    <>
+                      <h1 className="title">{todo.value}</h1>
+
+                      <span className="date">{todo.date}</span>
+
+                      <div className="button">
+                        <span
+                          className="edit"
+                          onClick={() => handleEdit(todo.id)}
+                        >
+                          <img src={editIcon} alt="Edit Icon" />
+                        </span>
+                        <span
+                          className="delete"
+                          onClick={() => handleDelete(todo.id)}
+                        >
+                          <img src={deleteIcon} alt="Delete Icon" />
+                        </span>
+                      </div>
+                    </>
                   )}
-
-                  <span className="date">{todo.date}</span>
-
-                  <div className="button">
-                    <span className="edit" onClick={() => handleEdit(todo.id)}>
-                      <img src={editIcon} alt="Edit Icon" />
-                    </span>
-                    <span
-                      className="delete"
-                      onClick={() => handleDelete(todo.id)}
-                    >
-                      <img src={deleteIcon} alt="Delete Icon" />
-                    </span>
-                  </div>
                 </div>
               );
             })}
